@@ -1,15 +1,20 @@
 <html lang="en">
 <head>
-    <script src="THE-TOM.js"></script>
+    <link rel="stylesheet" href="index.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tourney:wght@100&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T.L.T</title>
     <style>
+
      
 
         body{
             background-image: url("backgrpund.jpg");
-           
+            font-family: 'Tourney', cursive;
             background-position: fixed;
             background-size: 300px, 300px;
           
@@ -59,13 +64,57 @@
     
 </head>
 <body>
+    <script type="text/javascript" src="chat.js"></script>  
+    <script type="text/javascript" src="responses.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 <div align="center">
     <h1>THE TOM</h1>
+
+
+
     <div id="main">
+        <div class="chat-bar-collapsible">
+            <button id="chat-button" type="button" class="collapsible">Chat with us!
+                <i id="chat-icon" style="color: rgb(255, 255, 255);" class="fa fa-fw fa-comments-o"></i>
+            </button>
         <div><input id="input" type="text" placeholder="Say something..." autocomplete="off"/></div>
+
+    <div class="content">
+        <div class="full-chat-block">
+            <div class="outer-container">
+                <div class="chat-container">
+                        <!-- Messages -->
+                    <div id="chatbox">
+                        <h5 id="chat-timestamp"></h5>
+                        <p id="botstartermessage" class="bottext"><span>loading</span></p>
+
+                    </div>
+                    <!-- user input box -->
+                    <div class="chat-bar-input-block">
+                            <div id="userinput"></div>
+                            <input type="text" od="textinput" class="input-box" name="msg"
+                            placeholder="tap 'eneter' to send a messege">
+                    </div>
+                    <div class="chat bar icons"></div>
+                    <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart-o"
+                    onclick="heartbutton()"></i>
+                    <i id="chat-icon" style="color: rgb(0, 0, 0);" class="fa fa-fw fa-send-o"
+                    onclick="sendbutton()"></i>
+
+                </div>
+            </div>     
+            <div id="chat-bar-bottom">
+                <p></p>
+            </div>                  
+        </div>
     </div>
+    </div>
+
+
+
+
 </div>
 
 </body>
-</html>
+</html>          
