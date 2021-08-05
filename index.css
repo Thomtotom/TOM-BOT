@@ -7,14 +7,14 @@
 
 .collapsible {
     text-align: center;
-    background-color: rgb(0, 39, 99);
-    color: white;
+    background-image: url("chatbackground.png");
+    color: rgb(0, 0, 0);
     cursor: pointer;
     padding: 18px;
     width: 197vh;
-    outline: none;
+    text-decoration-color: #000;
     font-size: 18px;
-    border: 3px solid rgb(0, 85, 212);
+    
   
 }
 
